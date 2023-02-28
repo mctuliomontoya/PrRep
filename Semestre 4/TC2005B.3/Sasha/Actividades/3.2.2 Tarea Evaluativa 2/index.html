@@ -5,79 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header and nav bar -->
     <header>
-        <img src="#" alt="#">
-        <h3>My Company</h3>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="careers.html">Careers</a>
-            <a href="blog.html">Blog</a>
-            <a href="contactUs.html">Contact Us</a>
-        </nav>
+        <div class="header_bar">
+            <img src="https://s3-alpha-sig.figma.com/img/e355/941b/45fd45ac904209ee766859eb292f15d5?Expires=1678060800&Signature=mnvIaMsXBRKJr0VkT8n5C-UPRTlELhAQBre342EGaQ-70tjgmqkb~5RCwlJA07oOeA4oyM3Yka8b5Qz9TSD1lKQRM-g~CZz-wOfAtd9PsP3eFQWoXbcTCDAm6~jg8ZNxEdFPLX0zHPK6te640ZFp5NtLi0c4MAmHqU9GCEAdWa~4kjjeECAwNwIyA9RVRtYJVu2j4hyLxfKni9saT9z1CUP4l3j2PXTLB6F6J-21f7n1wthHVOFkckeyS8bzgAWPOtwYEkz~Br7hvARJMmMP94W3XY-t8gOKLHU8VVbAKMvd94mhMTxeUhdlWO0v8AO3K38IYOOSUtRBlqH2H8r-8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="My Company Logo">
+            <h3>My Company</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <img src="banner.png" alt="#" height="200" width="500"> 
+        </div>
     </header>
 
     <main>
         <!-- Page banner -->
-        <div class="banner">
-            <img src="#" alt="#" height="200" width="500"> 
-        </div>
 
         <!-- Main article -->
-        <article>
-            <h2>Solving your business challenges with design and technology</h2>
-            <p>As one of the world's <strong>fastest-growing</strong> global technology services providers, we deliver seamless, scalable digital solutions, embedding the <strong><i>right technology</i></strong>, <strong><i>methodology</i></strong> and <strong><i>mindsets</i></strong> within our customers’ organizations. Our technology expertise, focus on AI and continuous learning, combined with our diverse and inclusive teams, allows us to deliver what you need now, while building a roadmap to <a href="#">your future.</a></p>
-        
+        <div class="article-block">
+            <article>
+                <h2>Solving your business challenges with design and technology</h2>
+                <p>As one of the world's <strong>fastest-growing</strong> global technology services providers, we deliver seamless, scalable digital solutions, embedding the <strong><i>right technology</i></strong>, <strong><i>methodology</i></strong> and <strong><i>mindsets</i></strong> within our customers’ organizations. Our technology expertise, focus on AI and continuous learning, combined with our diverse and inclusive teams, allows us to deliver what you need now, while building a roadmap to <a href="#">your future.</a></p>
+            
 
-        <!-- Reviews -->
-            <div class="reviews">
-                <div class="reviewArticle">
-                    <article>
-                        <img src="#" alt="#">
-                        <h4>Marck Donovan VP ENGINEERING</h4>
-                        <i>“ The best solution in the market to solve any problem yoy may have.</i>
-                    </article>
+                <!-- Reviews -->
+                <div class="reviews">
+                    <div class="review-article">
+                            <div class="reviewer">
+                                <img src="reviewer1.png" alt="#">
+                                <div>
+                                    <h4>Marck Donovan</h4>
+                                    <h4> VP ENGINEERING</h4>
+                                </div>
+              
+                            </div>
+                            <blockquote><i>“ The best solution in the market to solve any problem yoy may have.</i></blockquote>
+                    </div>
+                    <div class="review-article">
+                        
+                            <div class="reviewer">
+                                <img src="reviewer2.png" alt="#">
+                                <div>
+                                    <h4>Marck Donovan</h4>
+                                    <h4> VP ENGINEERING</h4>
+                                </div>
+              
+                            </div>
+                            <blockquote><i>“ The best solution in the market to solve any problem yoy may have.</i></blockquote>                    </div>
+                    <div class="review-article">
+                            <div class="reviewer">
+                                <img src="reviewer3.png" alt="#">
+                                <div>
+                                    <h4>Marck Donovan</h4>
+                                    <h4> VP ENGINEERING</h4>
+                                </div>
+              
+                            </div>
+                            <blockquote><i>“ The best solution in the market to solve any problem yoy may have.</i></blockquote>                    </div>
                 </div>
-                <div class="reviewArticle">
-                    <article>
-                        <img src="#" alt="#">
-                        <h4>Marck Donovan VP ENGINEERING</h4>
-                        <i>“ The best solution in the market to solve any problem yoy may have.</i>
-                    </article>
-                </div>
-                <div class="reviewArticle">
-                    <article>
-                        <img src="#" alt="#">
-                        <h4>Marck Donovan VP ENGINEERING</h4>
-                        <i>“ The best solution in the market to solve any problem yoy may have.</i>
-                    </article>
-                </div>
+            </article>
+            <div class="lateral-bar"> 
+                <h3>Articles</h3>
+                <figure>
+                    <img src="image1.png" alt="#">
+                    <figcaption>New business-case for the AI industry... <a href="#">read more</a> </figcaption>
+                </figure>
+                <h3>WE ARE HIRING!</h3>
+                <b>Java Backend Developer</b>
+                <ul>
+                    <li>5+ years of experience</li>
+                    <li>B2 English proficiency</li>
+                    <li>Solid bases in Java, Spring-Boot, Spring-Core, AWS and SQL Server</li>
+                </ul>
             </div>
-        </article>
-        
-        <!-- Aside / Articles-->
-        <aside> 
-            <h3>Articles</h3>
-            <figure>
-                <img src="#" alt="#">
-                <figcaption>New business-case for the AI industry... <a href="#">read more</a> </figcaption>
-            </figure>
-            <h3>WE ARE HIRING!</h3>
-            <b>Java Backend Developer</b>
-            <ul>
-                <li>5+ years of experience</li>
-                <li>B2 English proficiency</li>
-                <li>Solid bases in Java, Spring-Boot, Spring-Core, AWS and SQL Server</li>
-            </ul>
-        </aside>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-text">
-            <p>© Copyright My Company 2023</p>
         </div>
+    </main>
+
+    <footer>
+            <h3>© Copyright My Company 2023</h3>
     </footer>
 </body>
 </html>

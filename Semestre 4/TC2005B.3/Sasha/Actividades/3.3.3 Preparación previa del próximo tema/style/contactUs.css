@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+main {
+    padding-left: 12em;
+    padding-bottom: 1em;
+}
+
+main h4 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: .75em;
+}
+
+.aside-image {
+    font-family: 'Inter';
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-image p {
+    margin-top: .25em;
+    margin-bottom: .75em;
+    font-size: 24px;
+}
+
+.form-inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+}
+
+.form-body {
+    padding-left: 2.5em;
+    width: 44em;
+}
+
+label {
+    font-size: 20px;
+}
+
+.form-image {
+    display: inline-block;
+    width: 505px;
+    height: 515px;
+    overflow: hidden;
+}
+
+.form-image img {
+    margin: 0px 0px 0px -390px;
+    max-height: 515px;
+}
+
+.single-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-row input {
+    width: 14em;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.single-input select {
+    line-height: 24px;
+    font-size: 20px;
+
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem top 50%;
+    background-size: 1.5rem auto;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.single-input input, .single-input select, .submit-button button {
+    border: 1px solid #B4B0B0;
+    border-radius: 5px;
+    padding: 12px 18px;
+}
+
+#thoughts {
+    padding: 12px 18px;
+    font-family: 'Inter';
+    border: 1px solid #B4B0B0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.submit-button button {
+    margin-top: 1.25em;
+    background-color: white;
+    width: fit-content;
+    border: 1px solid #B4B0B0;
+    font-size: 20px;
+}
+
+.submit-button button:hover {
+    background-color: #F2526E;
+    color: white;
+    border: 1px solid #F2526E;
+}
+
+.submit-button button:active {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #F2526E;
+}
+
+.submit-button button:active {
+    border: 1px solid #F2526E;
+}
+
+.single-input label {
+    padding-bottom: .3em;
+}
