@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/styles.css">
+    <style>
+        .navbar-nav {
+            margin: auto;
+            margin-right: 10px !important;
+        }
+        .container {
+            background-color: #f5f5f5;
+            border-radius: 2%;
+            margin-top: 20px;
+        }
+
+
+        .img-fluid {
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .apply-button {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .needs-validation {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        .btn {
+            background-color: #F2526E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #F2526E;
+            border: 1px solid #F2526E;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" width="30px" height="30px"
+                        class="d-inline-block align-text-top" />
+                    My Company
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/carreers.html">Careers</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="pages/addCarreer.html">Add Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--banner-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/banner.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+    </header>
+
+    <main class="my-5">
+
+        <div class="container">
+            <h2>Carreer</h2>
+            
+            <form class="needs-validation" id="formulario" novalidate>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="jobId">Job ID</label>
+                        <input type="number" class="form-control" id="job-id" name="job-id" placeholder="Job ID" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Job ID.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="jobPosition">Job Position</label>
+                        <input type="input" class="form-control" id="job-position" name="job-position"
+                            placeholder="Job Position" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Job Position.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="jobType">Job Type</label>
+                        <input type="input" class="form-control" id="job-type" name="job-type" placeholder="Job Type"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Job Type.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="jobCity">Ciudad</label>
+                        <select type="input" class="form-control" id="job-city" name="job-city" required aria-placeholder="City">
+                            <option selected value="">Select an option...</option>
+                            <option value="Hermosillo">Hermosillo</option>
+                            <option value="Monterrey">Monterrey</option>
+                            <option value="Guadalajara">Guadalajara</option>
+                        </select>
+                        <!-- <input type="input" class="form-control" id="job-city" name="job-city" placeholder="Ciudad"
+                            required> -->
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid City.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for-="Vacantes">Vacancies</label>
+                        <input type="number" class="form-control" id="job-vacancy" name="job-vacancy"
+                            placeholder="Vacancies" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid vacancies.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col md-12 mb-3">
+                        <label for="jobDescription">Job Description</label>
+                        <textarea class="form-control" id="job-description" name="job-description" rows="3"
+                            placeholder="Description" required></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Job Descripcion.
+                        </div>
+                    </div>
+                </div>
+                <button  type="submit" class=" btn btn-danger w-100 fs-5 mb-3" id="mi-boton">Publicar
+                    carrera</button>
+                <div class="mb-3">
+
+                </div>
+            </form>
+        </div>
+
+        <script src=scripts/validation.js"></script>
+        <script src="scripts/postRequest.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+            </script>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© Copyright My Company 2023</span>
+        </div>
+    </footer>
+</body>
+
+</html>

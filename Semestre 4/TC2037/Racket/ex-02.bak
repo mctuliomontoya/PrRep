@@ -1,0 +1,59 @@
+#lang racket
+
+;Ejercicio 1
+(define (insert n lst)
+  (cond ((null? lst) (list n))
+       ((<= n (car lst)) (cons n lst))
+      (else (cons (car lst) (insert n (cdr lst))))))
+;Casos de prueba
+
+;Ejercicio 1 variante
+(define (insert2 n lst)
+  (cond
+    [(empty? lst) (list n)]
+     [(< n (car lst)) (append (list n) lst)]
+     [else (append (list (car lst)) (insert2 n (cdr lst)))]))
+
+;Ejercicio 2
+(define (insert-sort lst [r '()])
+  (if (empty? lst) r
+    (insert-sort (cdr lst) (insert (car lst) r))))
+
+;Ejercicio 3
+(define (rotate-left n lst)
+  (cond
+    [(empty? lst) empty]  
+    [(negative? n) (rotate-left (+ (length lst) n) lst)]  
+    [(zero? n) lst]  
+    [else (let* ((len (length lst))(m (modulo n len)))(append (drop lst m) (take lst m)))]))
+
+;Ejercicio 4
+(define (prime-factor n)
+  (define (prim i n)
+    (cond ((> i (sqrt n)) (if (> n 1) (list n) '()))
+          ((zero? (modulo n i)) (cons i (prim i (/ n i))))
+          (else (prim (+ i 1) n))))
+  (prim 2 n))
+
+;Ejercicio 5
+(define (mcd a b)
+  (if (= b 0)
+      a
+      (mcd b (modulo a b))))
+
+;Ejercicio 6
+(define (deep-reverse lst)
+  (reverse lst))
+
+;Ejercicio 7
+
+
+;Ejercicio 10
+(define (encode lst)
+  (define (encode-helper l count)
+    (cond ((null? l) '())
+          ((= (length l) 1) (list (list count (car l))))
+          ((equal? (car l) (cadr l)) (encode-helper (cdr l) (+ 1 count)))
+          (else (cons (list count (car l)) (encode-helper (cdr l) 1)))))
+  (if (null? lst) '() (encode-helper lst 1)))
+
